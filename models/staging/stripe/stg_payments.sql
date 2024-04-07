@@ -5,7 +5,7 @@ PAYMENTMETHOD,
 STATUS, 
 AMOUNT/100 AS AMOUNT,
 created as created_at
- FROM RAW.STRIPE.PAYMENT
+ FROM {{ source('stripe', 'payment') }}
 )
 
 SELECT * FROM PAYMENT
