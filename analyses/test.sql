@@ -1,0 +1,1 @@
+SELECT * FROM analytics.production.stg_customers
